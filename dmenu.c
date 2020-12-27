@@ -1341,9 +1341,9 @@ main(int argc, char *argv[])
 		else if (!strcmp(argv[i], "-g")) {   /* number of columns in grid */
 			columns = atoi(argv[++i]);
 			if (lines == 0) lines = 1;
-		else if (!strcmp(argv[i], "-H"))
+		} else if (!strcmp(argv[i], "-H"))
 			histfile = argv[++i];
-		} else if (!strcmp(argv[i], "-l")) { /* number of lines in grid */
+		else if (!strcmp(argv[i], "-l")) { /* number of lines in grid */
 			lines = atoi(argv[++i]);
 			if (columns == 0) columns = 1;
 		}
