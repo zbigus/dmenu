@@ -22,6 +22,8 @@ static const char *colors[SchemeLast][2] = {
 };
 /* -l and -g options; controls number of lines and columns in grid if > 0 */
 static unsigned int lines      = 0;
+static unsigned int maxhist    = 64;
+static int histnodup           = 1;	/* if 0, record repeated histories */
 static unsigned int columns    = 0;
 /* -h option; minimum height of a menu line */
 static unsigned int lineheight = 0;
